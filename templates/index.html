@@ -3,5 +3,32 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Hello, {{ name }}!</h1>
+   <div class="container mx-auto">
+        <section class="flex items-center justify-center h-screen">
+            <form class="flex flex-col">
+                <label>Credit Score</label>
+                <input x-data x-mask="999" placeholder="670" />
+                <label>Monthly income</label>
+                <input x-data x-mask:dynamic="'$' + $money($input)" placeholder="$80,000" />
+                <label>Monthly expenses </label>
+                <input x-data x-mask:dynamic="'$' + $money($input)" placeholder="$5,000" />
+                <label>Loan length</label>
+                <div class="flex flex-row justify-between gap-5">
+                    <label>
+                        <input checked type="radio" name="loanlength" id="15yr" class="peer hidden"/>
+                        <div class="peer-checked:bg-blue-300 hover:bg-gray-200 bg-white px-9 py-3 border-black shadow-2xl rounded-md">15 yr</div>
+                    </label>
+                    <label>
+                        <input checked type="radio" name="loanlength" id="30yr" class="peer hidden"/>
+                        <div class="peer-checked:bg-blue-300 hover:bg-gray-200 bg-white px-9 py-3 border-black shadow-2xl rounded-md">30 yr</div>
+                    </label>
+                </div>
+                <label>Down payment</label>
+                <input x-data x-mask:dynamic="'$' + $money($input)" placeholder="$5,000" />
+                <label>House price</label>
+                <input x-data x-mask:dynamic="'$' + $money($input)" placeholder="$5,000" />
+                <button type="submit" class="bg-blue-200 hover:bg-blue-300 px-5 py-3 rounded-md shadow-2xl">Calculate</button>
+            </form>
+        </section>
+   </div>
 {% endblock content %}

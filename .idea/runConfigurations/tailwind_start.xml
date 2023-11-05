@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="hackutd2023" type="Python.DjangoServer" factoryName="Django server" singleton="false">
+  <configuration default="false" name="tailwind start" type="Python.DjangoServer" factoryName="Django server" singleton="false">
     <module name="hackutd2023" />
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
@@ -14,14 +14,13 @@
     <option name="ADD_CONTENT_ROOTS" value="true" />
     <option name="ADD_SOURCE_ROOTS" value="true" />
     <option name="launchJavascriptDebuger" value="false" />
-    <option name="port" value="8000" />
     <option name="host" value="" />
-    <option name="additionalOptions" value="" />
+    <option name="additionalOptions" value="start" />
     <option name="browserUrl" value="" />
     <option name="runTestServer" value="false" />
     <option name="runNoReload" value="false" />
-    <option name="useCustomRunCommand" value="false" />
-    <option name="customRunCommand" value="" />
+    <option name="useCustomRunCommand" value="true" />
+    <option name="customRunCommand" value="tailwind" />
     <method v="2" />
   </configuration>
 </component>

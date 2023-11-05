@@ -7,6 +7,11 @@ def index(request):
     context = {'name': 'World'}
     return render(request, 'index.html', context)
 
+
 def result(request):
     context = {'name': 'World'}
     return render(request, 'result.html', context)
+
+def alpine(request):
+    context = {'name': 'World'}
+    return render(request, 'alpine.html', context)
